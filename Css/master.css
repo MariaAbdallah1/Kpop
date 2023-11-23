@@ -1,0 +1,295 @@
+:root {
+    --primarycolor:#fbff00;
+    --secondrtcolor : #f7bcf7; 
+    --lightcolor:#ffffff;
+    --bgcolor-1:#171a1c;
+    --bgcolor-2:#22282a;
+    --padding:8%;
+
+}
+
+
+
+
+
+* {
+    
+     padding: 0;
+     margin: 0;
+ }
+
+
+
+ 
+ 
+ .main {
+     width: 100%;
+     background-color: black;
+     background-position: center;
+     background-size: cover;
+     height: 350vh;
+ }
+
+ .navbar {
+     width: 1200px;
+     height: 75px;
+     margin: auto;
+ }
+
+ .icon {
+      width: 200px;
+      float: left;
+      height: 70px;
+ }
+
+   .logo {
+      color: #fbff00;
+      font-size: 35px;
+      font-family: Arial;
+      padding-left: 20px;
+      float: left;
+      padding-top: 10px;
+ }
+
+ .menu {
+     width: 400px;
+     float: left;
+     height: 70px;
+ }
+
+  ul {
+     float: left;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+  ul li {
+     list-style: none;
+     margin-left: 62px;
+     margin-top: 27px;
+     font-size: 14px;
+     z-index: 1;
+  }
+  
+  
+  ul li a {
+     text-decoration: none;
+     color: #fff;
+     font-family: Arial;
+     font-weight: bold;
+     transition: 0.4s ease-in-out;
+     z-index:1;
+ }
+
+
+
+ ul li::after{
+     content: '';
+     width: 0%;
+     height: 2px;
+     background: #fbff00;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+ }
+
+ ul li :hover::after {
+     width: 100%;
+ }
+
+ ul li a:hover {
+         color: #fbff00;
+        
+
+ }
+
+ .pages{
+     display: none;
+ }
+
+ul li :hover .pages {
+    display: block;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -60px;
+}
+
+ul li :hover .pages ul {
+      display: block;
+      margin: 5px;
+}
+
+ul li:hover .pages ul li {
+    width: 50px;
+    padding: 0px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+ul li :hover .pages ul li:last-child {
+    border-bottom: none;
+}
+
+ul li:hover .pages ul li a:hover{
+    color: #fbff00;
+}
+
+.search {
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+    z-index: 1;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #fbff00;
+    margin-top: 13px;
+    color: rgb(255, 255, 255);
+    border-right: none;
+    font-size: 20px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 1;
+    
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #fbff00;
+    border: 2px solid #fbff00;
+    margin-top: 13px ;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+.btn:focus {
+     outline: none;
+}
+
+.srch:focus{
+    outline: none;
+
+ }
+
+ button{
+     color: #ffffff;
+     font-size: medium;
+     padding: 10px 25px;
+     background: transparent;
+     background-color: #000000;
+     border: 1px solid #fcfcfd;
+     border-radius: 20px;
+     outline: none;
+     cursor: pointer;
+     transition: 0.4s ease;
+ }
+
+ button:hover{
+     background-color: #fbff00;
+     color: #000000;
+     transform: scale(1.1);
+ }
+
+body{
+    background-color: black
+}
+
+h1{
+    color: #fbff00;
+    margin-top: 50px;
+    
+}
+
+.img2 {
+    margin-top: 50px;
+    float:right;
+
+}
+
+ img {
+    width: 400px;
+    margin-top: 10px;
+    
+}
+
+.p1{
+    padding-top:15px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    color: white;
+
+
+}
+
+span {
+    margin-top: 10px;
+    color: burlywood;
+    margin-left: 150px;
+}
+
+
+
+.sp{
+    font-size: 50px;
+    margin-left: auto;
+    color: #fbff00;
+}
+
+img,p{
+    float: left;
+}
+
+p{
+    color:rosybrown;
+    font-family: arial;
+    font-size: 20px;
+    margin-left:30px;
+    padding-top: 10px;
+   font-weight: bold;
+  text-shadow: 0.5px 0.5px 10px peru; 
+   
+    
+    
+}
+
+.cook{
+    font-size: 30px;
+    color: burlywood;
+}
+
+
+.scrolltop {
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: grey;
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    
+    }
+    
+    .scrolltop:hover{
+       background-color: #f7f7f7;
+       color: #000;
+    
+    }
+    
