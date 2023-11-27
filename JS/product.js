@@ -149,6 +149,8 @@ function reloadCard(){
     listCard.innerHTML = '';
     let count = 0;
     let totalPrice = 0;
+    let countgroup = 0;
+    let group = ["EXO", "Stray Kids", "Seventeen", "Blackpink"];
     listCards.forEach((value, key)=>{
         totalPrice = totalPrice + value.price;
         count = count + value.quantity;
@@ -165,7 +167,17 @@ function reloadCard(){
                 </div>`;
                 listCard.appendChild(newDiv);
         }
+        let name = value.name; 
+        for (name in group){
+            countgroup = countgroup + 1; 
+        }
     })
+    if(countgroup > 2){
+        totalPrice = totalPrice * 0.8;
+    }
+    if(totalPrice > 1000){
+        totalPrice = totalPrice * 0.9;
+    }
     totalPrice = totalPrice + " EGP";
     total.innerText = totalPrice.toLocaleString();
     quantity.innerText = count;
