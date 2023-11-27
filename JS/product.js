@@ -150,7 +150,7 @@ function reloadCard(){
     let count = 0;
     let totalPrice = 0;
     let countgroup = 0;
-    let group = ["EXO", "Stray Kids", "Seventeen", "Blackpink"];
+    let group = ["EXO", "Stray Kids", "Seventeen", "BlackPink", "BTS", "Jungkook", "SuperM"];
     listCards.forEach((value, key)=>{
         totalPrice = totalPrice + value.price;
         count = count + value.quantity;
