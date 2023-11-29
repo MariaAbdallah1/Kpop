@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en_us">
+    <head>
+        <title>Product</title>
+        <link rel="stylesheet" href="..\Css\style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="product">
+        <div class="container">
+            <header>
+                <h1>Time for shopping</h1>
+                <div class="shopping">
+                    <img src="../media/shopping.svg">
+                    <span class="quantity">0</span>
+                </div>
+            </header>
+    
+            <div class="list">
+              
+            </div>
+        </div>
+        <div class="card">
+            <h1>Card</h1>
+            <ul class="listCard">
+            </ul>
+            <div class="checkOut">
+                <div class="total">0</div>
+                <div class="closeShopping">Close</div>
+            </div>
+            <div style="margin-top: 30px; padding: 0 20px;">
+                <h1>Promo Code</h1>
+                <input type="text" placeholder="Enter your code" id = "promoCode">
+                <button class="first-btn" id="promo" onclick="reloadCard()">Apply</button>
+            </div>
+        </div>
+    
+        <script src="../JS/product.js"></script>
+
+    </body>
+</html>
